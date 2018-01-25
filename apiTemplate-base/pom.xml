@@ -20,6 +20,7 @@
     <modules>
 
         <module>modules/apiTemplate-model</module>
+        <module>modules/apiTemplate-core</module>
     </modules>
 
     <distributionManagement>

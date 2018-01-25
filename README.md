@@ -10,3 +10,6 @@ REST API template:
     - apiTemplate-model:
         - module name, groupId, artifactId
         - ExampleModel class
+    - apiTemplate-core:
+        - module name,  groupId, artifactId
+        - ExampleDAO class
