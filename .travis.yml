@@ -14,8 +14,7 @@ matrix:
       services:
         - docker
 
-      before_install: cp .travis.settings.xml $HOME/.m2/settings.xml
-      before_install: cd $TRAVIS_BUILD_DIR/apiTemplate-base/modules/apiTemplate-api
+      before_install: cp .travis.settings.xml $HOME/.m2/settings.xml && cd $TRAVIS_BUILD_DIR/apiTemplate-base/modules/apiTemplate-api
 
       install: true
       script:

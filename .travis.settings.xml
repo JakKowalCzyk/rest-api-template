@@ -1,4 +1,15 @@
-<settings>
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+    <pluginGroups>
+    </pluginGroups>
+
+    <proxies>
+    </proxies>
+
+
     <servers>
         <server>
             <id>${env.MAVEN_REPO_NAME}</id>
@@ -7,5 +18,13 @@
         </server>
 
     </servers>
+
+    <mirrors>
+    </mirrors>
+
+
+    <profiles>
+    </profiles>
+
 
 </settings>
