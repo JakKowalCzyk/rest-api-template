@@ -1,6 +1,6 @@
 branches:
   only:
-    - example
+    - test
 addons:
   apt:
     packages:
