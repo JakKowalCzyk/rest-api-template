@@ -13,3 +13,18 @@ REST API template:
     - apiTemplate-core:
         - module name,  groupId, artifactId
         - ExampleDAO class
+    - apiTemplate-api:
+        - pom.xml:
+            - s3 bucket name and directory of project - storing needed modules in s3
+            - docker image name
+            - docker repo name
+        - module name,  groupId, artifactId
+        - properties:
+            - db url
+            - db name
+        - swagger config(name, desc)
+        - ExampleController & ExampleMapper
+        - Dockerfile?
+    - travis.yml:
+        - path to api
+        - branch to build

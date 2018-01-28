@@ -1,0 +1,26 @@
+branches:
+  only:
+    - example
+addons:
+  apt:
+    packages:
+      - docker-ce
+matrix:
+  include:
+    - language: java
+      sudo: required
+      jdk: oraclejdk8
+
+      services:
+        - docker
+
+      before_install: cd $TRAVIS_BUILD_DIR/apiTemplate-base/modules/apiTemplate-api
+
+      install: true
+      script:
+        - |
+            mvn clean deploy
+            docker login -u $DOCKER_USER -p $DOCKER_PASS
+            mvn install dockerfile:build
+            mvn  dockerfile:push
+            !

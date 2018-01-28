@@ -25,18 +25,18 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>s3-maven-repo</id>
-            <url>s3://s3-maven-repo/projectname/snapshot</url>
+            <id>maven-repo</id>
+            <url>s3://maven-repo/projectname/snapshot</url>
         </snapshotRepository>
         <repository>
-            <id>s3-maven-repo</id>
-            <url>s3://s3-maven-repo/projectname/release</url>
+            <id>maven-repo</id>
+            <url>s3://maven-repo/projectname/release</url>
         </repository>
     </distributionManagement>
     <repositories>
         <repository>
-            <id>s3-maven-repo</id>
-            <url>s3://s3-maven-repo/projectname/release</url>
+            <id>maven-repo</id>
+            <url>s3://maven-repo/projectname/release</url>
         </repository>
     </repositories>
 
@@ -69,7 +69,6 @@
             </plugin>
         </plugins>
         <extensions>
-
             <extension>
                 <groupId>org.kuali.maven.wagons</groupId>
                 <artifactId>maven-s3-wagon</artifactId>

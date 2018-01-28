@@ -6,6 +6,7 @@ package com.kowalczyk.service.impl;
 
 import com.kowalczyk.DAO.ModelDAO;
 import com.kowalczyk.model.ModelObject;
+import com.kowalczyk.model.exception.ObjectNotFoundException;
 import com.kowalczyk.service.ModelService;
 
 import java.util.Collection;
@@ -21,6 +22,9 @@ public abstract class ModelServiceImpl<T extends ModelObject> implements ModelSe
 
     @Override
     public T findOne(Long id) {
+        if (!isExist(id)) {
+            throw new ObjectNotFoundException(id);
+        }
         return modelDAO.findOne(id);
     }
 
