@@ -26,17 +26,17 @@
     <distributionManagement>
         <snapshotRepository>
             <id>kow-maven-repo</id>
-            <url>s3://kow-maven-repo/snapshot/release</url>
+            <url>s3://kow-maven-repo/test/release</url>
         </snapshotRepository>
         <repository>
             <id>kow-maven-repo</id>
-            <url>s3://kow-maven-repo/release/release</url>
+            <url>s3://kow-maven-repo/test/release</url>
         </repository>
     </distributionManagement>
     <repositories>
         <repository>
             <id>kow-maven-repo</id>
-            <url>s3://kow-maven-repo/release/release</url>
+            <url>s3://kow-maven-repo/test/release</url>
         </repository>
     </repositories>
 
