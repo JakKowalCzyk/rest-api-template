@@ -5,7 +5,8 @@ addons:
   apt:
     packages:
       - docker-ce
-env: REPO_ACCESS_ID=$REPO_ACCESS_ID
+env:
+  matrix: REPO_ACCESS_ID=$REPO_ACCESS_ID
 matrix:
   include:
     - language: java
