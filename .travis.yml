@@ -5,9 +5,9 @@ addons:
   apt:
     packages:
       - docker-ce
+env: MAVEN_REPO=$MAVEN_REPO_NAME
 matrix:
   include:
-    - env: MAVEN_REPO=$MAVEN_REPO_NAME
     - language: java
       sudo: required
       jdk: oraclejdk8
