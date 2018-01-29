@@ -5,7 +5,7 @@ addons:
   apt:
     packages:
       - docker-ce
-env: MAVEN_REPO=$MAVEN_REPO_NAME
+env: REPO_ACCESS_ID=$REPO_ACCESS_ID
 matrix:
   include:
     - language: java
