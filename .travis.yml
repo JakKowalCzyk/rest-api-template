@@ -7,6 +7,7 @@ addons:
       - docker-ce
 matrix:
   include:
+    - env: MAVEN_REPO=$MAVEN_REPO_NAME
     - language: java
       sudo: required
       jdk: oraclejdk8
@@ -14,7 +15,7 @@ matrix:
       services:
         - docker
 
-      before_install: echo $MAVEN_REPO_NAME && cp .travis.settings.xml $HOME/.m2/settings.xml && cat $HOME/.m2/settings.xml && cd $TRAVIS_BUILD_DIR/apiTemplate-base && mvn clean deploy && cd modules/apiTemplate-api
+      before_install: echo $MAVEN_REPO && cp .travis.settings.xml $HOME/.m2/settings.xml && cat $HOME/.m2/settings.xml && cd $TRAVIS_BUILD_DIR/apiTemplate-base && mvn clean deploy && cd modules/apiTemplate-api
 
       install: true
       script:
