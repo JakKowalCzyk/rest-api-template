@@ -16,9 +16,9 @@ matrix:
       services:
         - docker
 
-      before_install: echo $MAVEN_REPO && cp .travis.settings.xml $HOME/.m2/settings.xml && cat $HOME/.m2/settings.xml && cd $TRAVIS_BUILD_DIR/apiTemplate-base && mvn clean deploy && cd modules/apiTemplate-api
-
+      before_install: echo $MAVEN_REPO && cp .travis.settings.xml $HOME/.m2/settings.xml
       install: true
+      before_script: cat $HOME/.m2/settings.xml && cd $TRAVIS_BUILD_DIR/apiTemplate-base && mvn clean deploy && cd modules/apiTemplate-api
       script:
         - |
             docker login -u $DOCKER_USER -p $DOCKER_PASS
