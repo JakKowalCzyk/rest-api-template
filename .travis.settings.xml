@@ -12,9 +12,9 @@
 
     <servers>
         <server>
-            <id>${MAVEN_REPO_NAME}</id>
-            <username>${REPO_ACCESS_ID}</username>
-            <password>${REPO_ACCESS_PASS}</password>
+            <id>$MAVEN_REPO_NAME</id>
+            <username>$REPO_ACCESS_ID</username>
+            <password>$REPO_ACCESS_PASS</password>
         </server>
 
     </servers>
