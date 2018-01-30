@@ -20,6 +20,7 @@ matrix:
       script:
         - |
             docker login -u $DOCKER_USER -p $DOCKER_PASS
+            echo 'builind'
             mvn install dockerfile:build
             mvn  dockerfile:push
             !
