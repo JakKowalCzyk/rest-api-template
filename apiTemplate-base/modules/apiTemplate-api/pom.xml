@@ -24,18 +24,18 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>kow-maven-repo</id>
-            <url>s3://kow-maven-repo/test/release</url>
+            <id>maven-repo-kow</id>
+            <url>s3:/maven-repo-kow/test/snapshot</url>
         </snapshotRepository>
         <repository>
-            <id>kow-maven-repo</id>
-            <url>s3://kow-maven-repo/test/release</url>
+            <id>maven-repo-kow</id>
+            <url>s3://maven-repo-kow/test/release</url>
         </repository>
     </distributionManagement>
     <repositories>
         <repository>
-            <id>kow-maven-repo</id>
-            <url>s3://kow-maven-repo/test/release</url>
+            <id>maven-repo-kow</id>
+            <url>s3://maven-repo-kow/test/release</url>
         </repository>
     </repositories>
 

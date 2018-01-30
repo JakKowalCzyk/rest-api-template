@@ -12,7 +12,7 @@
 
     <servers>
         <server>
-            <id>kow-maven-repo</id>
+            <id>maven-repo-kow</id>
             <username>${env.REPO_ACCESS_ID}</username>
             <password>${env.REPO_ACCESS_PASS}</password>
         </server>
