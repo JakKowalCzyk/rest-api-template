@@ -23,6 +23,6 @@ matrix:
         - |
             mvn clean install
             docker login -u $DOCKER_USER -p $DOCKER_PASS
-            docker build -t kowkowal/test-api:api -f Dockerfile.fabric8 .
+            docker build -t kowkowal/test-api:api -f Dockerfile .
             docker push kowkowal/test-api:api
             !
