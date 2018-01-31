@@ -19,9 +19,8 @@ matrix:
              cp .travis.settings.xml $HOME/.m2/settings.xml
              cd $TRAVIS_BUILD_DIR/apiTemplate-base
              #mvn clean deploy
-             modules/apiTemplate-api
+             cd modules/apiTemplate-api
              !
-      before_script:
       script:
         - |
             docker login -u $DOCKER_USER -p $DOCKER_PASS
