@@ -14,12 +14,19 @@ matrix:
       services:
         - docker
 
-      before_install: cp .travis.settings.xml $HOME/.m2/settings.xml && cd $TRAVIS_BUILD_DIR/apiTemplate-base && mvn clean deploy && echo deployed && cd modules/apiTemplate-api
+      before_install:
+        - |
+             cp .travis.settings.xml $HOME/.m2/settings.xml
+             cd $TRAVIS_BUILD_DIR/apiTemplate-base
+             #mvn clean deploy
+             modules/apiTemplate-api
+             !
       before_script:
       script:
         - |
             docker login -u $DOCKER_USER -p $DOCKER_PASS
-            echo 'builind'
-            mvn install dockerfile:build
-            mvn  dockerfile:push
+            docker build -t kowkowal/test-api:api -f Dockerfile.fabric8 .
+            docker push kowkowal/test-api:api
+            #mvn install dockerfile:build
+            #mvn  dockerfile:push
             !
