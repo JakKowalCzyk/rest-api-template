@@ -1,5 +1,10 @@
-FROM openjdk:8-jdk-alpine
-VOLUME /tmp
-ADD target/api-0.1.jar app.jar
-ENV JAVA_OPTS=""
-ENTRYPOINT exec java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /app.jar
+FROM fabric8/java-jboss-openjdk8-jdk
+
+USER root
+
+ENV AB_OFF true
+
+ENV JAVA_APP_JAR app.jar
+
+ADD target/*.jar /deployments/$JAVA_APP_JAR
+
