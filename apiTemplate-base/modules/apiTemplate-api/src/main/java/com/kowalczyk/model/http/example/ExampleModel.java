@@ -1,6 +1,6 @@
-package com.kowalczk.model.http.example;
+package com.kowalczyk.model.http.example;
 
-import com.kowalczk.model.http.HTTPModel;
+import com.kowalczyk.model.http.HTTPModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -1,9 +1,9 @@
-package com.kowalczk.controller.example.impl;
+package com.kowalczyk.controller.example.impl;
 
-import com.kowalczk.controller.example.ExampleModelController;
-import com.kowalczk.controller.impl.GenericControllerImpl;
-import com.kowalczk.model.http.example.ExampleModel;
-import com.kowalczk.model.mapper.example.ExampleModelMapper;
+import com.kowalczyk.controller.example.ExampleModelController;
+import com.kowalczyk.controller.impl.GenericControllerImpl;
+import com.kowalczyk.model.http.example.ExampleModel;
+import com.kowalczyk.model.mapper.example.ExampleModelMapper;
 import com.kowalczyk.service.example.ExampleModelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

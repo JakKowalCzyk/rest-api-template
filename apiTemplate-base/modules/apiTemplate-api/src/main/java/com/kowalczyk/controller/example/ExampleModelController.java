@@ -1,7 +1,7 @@
-package com.kowalczk.controller.example;
+package com.kowalczyk.controller.example;
 
-import com.kowalczk.controller.GenericController;
-import com.kowalczk.model.http.example.ExampleModel;
+import com.kowalczyk.controller.GenericController;
+import com.kowalczyk.model.http.example.ExampleModel;
 import io.swagger.annotations.Api;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

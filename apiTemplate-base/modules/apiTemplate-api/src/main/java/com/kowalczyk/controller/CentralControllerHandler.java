@@ -1,8 +1,8 @@
-package com.kowalczk.controller;
+package com.kowalczyk.controller;
 
-import com.kowalczk.model.http.ApiError;
 import com.kowalczyk.model.exception.GenericException;
 import com.kowalczyk.model.exception.ObjectNotFoundException;
+import com.kowalczyk.model.http.ApiError;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

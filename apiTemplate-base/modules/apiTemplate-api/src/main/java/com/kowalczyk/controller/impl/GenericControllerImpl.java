@@ -1,9 +1,9 @@
-package com.kowalczk.controller.impl;
+package com.kowalczyk.controller.impl;
 
-import com.kowalczk.controller.GenericController;
-import com.kowalczk.model.http.HTTPModel;
-import com.kowalczk.model.mapper.GenericMapper;
+import com.kowalczyk.controller.GenericController;
 import com.kowalczyk.model.ModelObject;
+import com.kowalczyk.model.http.HTTPModel;
+import com.kowalczyk.model.mapper.GenericMapper;
 import com.kowalczyk.service.ModelService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

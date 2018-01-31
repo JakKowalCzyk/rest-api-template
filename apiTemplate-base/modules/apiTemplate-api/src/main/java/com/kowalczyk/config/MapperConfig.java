@@ -1,4 +1,4 @@
-package com.kowalczk.config;
+package com.kowalczyk.config;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

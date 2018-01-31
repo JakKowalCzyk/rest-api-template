@@ -1,4 +1,4 @@
-package com.kowalczk;
+package com.kowalczyk;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

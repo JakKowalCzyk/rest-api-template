@@ -1,6 +1,6 @@
-package com.kowalczk.controller;
+package com.kowalczyk.controller;
 
-import com.kowalczk.model.http.HTTPModel;
+import com.kowalczyk.model.http.HTTPModel;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;

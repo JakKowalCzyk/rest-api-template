@@ -1,4 +1,4 @@
-package com.kowalczk.model.http;
+package com.kowalczyk.model.http;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.annotations.ApiModel;

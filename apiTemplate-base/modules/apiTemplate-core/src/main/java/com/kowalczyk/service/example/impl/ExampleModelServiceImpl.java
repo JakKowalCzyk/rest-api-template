@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- * Created by JK on 2018-01-25.
+ * Created by JKowalczyk on 2018-01-31.
  */
 @Service
 public class ExampleModelServiceImpl extends ModelServiceImpl<ExampleModel> implements ExampleModelService {

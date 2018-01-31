@@ -1,7 +1,7 @@
-package com.kowalczk.model.mapper;
+package com.kowalczyk.model.mapper;
 
-import com.kowalczk.model.http.HTTPModel;
 import com.kowalczyk.model.ModelObject;
+import com.kowalczyk.model.http.HTTPModel;
 import org.modelmapper.ModelMapper;
 
 /**

@@ -1,7 +1,7 @@
-package com.kowalczk.model.mapper.example;
+package com.kowalczyk.model.mapper.example;
 
-import com.kowalczk.model.http.example.ExampleModel;
-import com.kowalczk.model.mapper.GenericMapper;
+import com.kowalczyk.model.http.example.ExampleModel;
+import com.kowalczyk.model.mapper.GenericMapper;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
