@@ -15,12 +15,11 @@ matrix:
         - docker
 
       before_install:
-        - |
-             cp .travis.settings.xml $HOME/.m2/settings.xml
-             cd $TRAVIS_BUILD_DIR/apiTemplate-base
+        - cp .travis.settings.xml $HOME/.m2/settings.xml
+        - cd $TRAVIS_BUILD_DIR/apiTemplate-base
              #mvn clean deploy
-             cd modules/apiTemplate-api
-             !
+        - cd modules/apiTemplate-api
+
       script:
         - |
             docker login -u $DOCKER_USER -p $DOCKER_PASS
