@@ -26,7 +26,7 @@
     <distributionManagement>
         <snapshotRepository>
             <id>maven-repo</id>
-            <url>s3://maven-repo/projectname/snapshot</url>
+            <url>s3:/maven-repo/projectname/snapshot</url>
         </snapshotRepository>
         <repository>
             <id>maven-repo</id>
