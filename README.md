@@ -24,7 +24,12 @@ REST API template:
             - db name
         - swagger config(name, desc)
         - ExampleController & ExampleMapper
-        - Dockerfile?
+        - Dockerfile
     - travis.yml:
         - path to api
         - branch to build
+        - docker image name
+        - docker repo name
+    - travis:
+        - docker login & pass
+        - access_keys
