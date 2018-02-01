@@ -33,3 +33,11 @@ REST API template:
     - travis:
         - docker login & pass
         - access_keys
+    - scripts:
+        - docker-compose:
+          - db name
+          - docker image name
+          - docker repo name
+          - ports
+          - volumes
+          - envs
